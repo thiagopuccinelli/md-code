@@ -1,4 +1,5 @@
 module vars 
+    
     implicit none 
     integer, parameter :: Nsteps = 15000
     integer, parameter :: Nsteps_equil = 5000
