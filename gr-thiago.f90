@@ -2,7 +2,7 @@ program gr
    implicit none 
 
    integer, parameter :: N = 1000
-   integer, parameter :: snaps = 50 
+   integer, parameter :: snaps = 100 
    real(8), parameter :: box_length = 12.59921049894873
    integer, parameter :: Nhis = 2.**8. 
    real(8), parameter :: time = 1.0
