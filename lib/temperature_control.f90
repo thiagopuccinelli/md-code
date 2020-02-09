@@ -11,10 +11,10 @@ subroutine temperature_control
             v2 = v2 + v(i,k) ** 2
         enddo 
     enddo 
-    temperature  = v2 / (3*npart)
+    temperature  = 2 * v2 / (3*npart)
     v2 = v2 / npart 
     en_kin = 0.5d0 * mass * v2 
-    open(30, file='ENERGY.dat')
+    open(30, file='ENERGY'//trim(res_rho)//'.dat')
     write(30, 3000) step, temperature, en_kin, sum(en_pot(:))/npart
 3000 format(4X, I6, 3F20.5)
     return 
