@@ -3,7 +3,7 @@ program gr
 
    integer, parameter :: N = 1000
    integer, parameter :: snaps = 100 
-   real(8), parameter :: box_length = 14.1898341197
+   real(8), parameter :: box_length = 11.0064241630
    integer, parameter :: Nhis = 2.**8. 
    real(8), parameter :: time = 1.0
 
